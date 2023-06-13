@@ -43,5 +43,6 @@ public class BaseTest {
 	{
 		driver.close();
 		System.out.println("teardown sucessful");
+		System.out.println("testing complete");
 	}
 }
