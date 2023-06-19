@@ -25,8 +25,8 @@ public class BaseTest {
 	public void setUp() throws IOException
 	{
 		if (driver==null) {
-			fr = new FileReader("C:\\Eclipse_workspace\\SeleniumAutomationFramework\\AutomationFramework\\src\\test\\resources\\ConfigFiles\\config.properties");
-			fr1 = new FileReader("C:\\Eclipse_workspace\\SeleniumAutomationFramework\\AutomationFramework\\src\\test\\resources\\ConfigFiles\\locators.properties");
+			fr = new FileReader("C:\\eclipseWorkspace\\SeleniumNOTHRepo\\SeleniumNOTH\\AutomationFrameworkNOTH\\src\\test\\resources\\ConfigFiles\\config.properties");
+			fr1 = new FileReader("C:\\eclipseWorkspace\\SeleniumNOTHRepo\\SeleniumNOTH\\AutomationFrameworkNOTH\\src\\test\\resources\\ConfigFiles\\locators.properties");
 			prop.load(fr);
 			loc.load(fr1);
 		}
