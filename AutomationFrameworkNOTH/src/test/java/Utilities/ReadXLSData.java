@@ -27,8 +27,8 @@ public class ReadXLSData {
 	@DataProvider(name="testdata")
 	public String[][] getData (Method m) throws IOException{
 		String excelSheetName = m.getName();
-		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\testdata.xlsx");
-		FileInputStream fis = new FileInputStream(f);
+		File file = new File(System.getProperty("user.dir") + "/src/test/resources/TestData/testdata.xlsx");
+		FileInputStream fis = new FileInputStream(file);
 		//XSSF replacing HSSF
 		XSSFWorkbook wb = new XSSFWorkbookFactory().create(fis);
 		Sheet sheetName = wb.getSheet(excelSheetName);
